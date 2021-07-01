@@ -1,0 +1,1 @@
+Segundo examen del curso de Responsive Web Design del curso freecodecamp

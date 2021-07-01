@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --color-gray:#7E7E7E;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+}
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.main{
+    max-width:750px;
+    margin:55px auto 0 auto;
+}
+#title{
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+    color:var(--color-white);
+}
+#description{
+    font-weight: 200;
+    font-style: italic;
+    font-size:19px;
+    text-align: center;
+    color:var(--color-white);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    padding-bottom: 33px;
+}
+#survey-form{
+    background-color: #00000083;
+    border-radius: 5px;
+    padding:50px 40px;
+}
+.surver-form__name,
+.survey-form__email,
+.survey-form__age,
+.survey-form__dropdown,
+.survey-form__radio,
+.survey-form__dropdown1,
+.survey-form__checkbox,
+.survey-form__textarea{
+    padding-bottom: 32px;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+#dropdown {
+  width: 100%;
+  padding: 4px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size:16px;
+  color:var(--color-gray);
+}
+.input-radio,
+.input-checkbox{
+display:block;
+margin-right: 5px;
+min-height:1.25rem;
+min-width:1.25rem;
+}
+
+
+label,
+.survey-form__radio p,
+.survey-form__checkbox p{
+    color:var(--color-white);
+    font-size:18px; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+.label-radio,
+.label-checkbox{
+    display:flex;   
+}
+
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height:120px;
+    min-height:120px;
+    margin:8px 0;
+      padding: 4px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#submit{
+    width:100%;
+    padding:12px 0;
+    border:none;
+    background-color: var(--color-green);
+    color:var(--color-white);
+    font-size:18px;
+}
